@@ -19,4 +19,11 @@ public class TestController {
         String s = testService.test01();
         return s;
     }
+
+    @RequestMapping("/002")
+    public String test02() {
+        String s = testService.test01();
+        return s;
+    }
+
 }
