@@ -1,0 +1,18 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: signet-B
+
+#服务发现
+eureka:
+  client:
+    serviceUrl: #Eureka客户端与Eureka服务端进行交互的地址
+      defaultZone: http://127.0.0.1:8888/eureka/
+  instance:
+    prefer-ip-address: true #把自己的ip地址暴露给Eureka服务器端
+
+#服务调用
+feign:
+  hystrix:
+    enabled: true
