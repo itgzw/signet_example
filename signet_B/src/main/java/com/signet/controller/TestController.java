@@ -21,9 +21,8 @@ public class TestController {
     }
 
     @RequestMapping("/002")
-    public String test02() {
-        String s = testService.test01();
-        return s;
+    public String test02() { ;
+        return "";
     }
 
 }
