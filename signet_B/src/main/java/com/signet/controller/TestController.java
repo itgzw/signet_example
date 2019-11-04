@@ -17,6 +17,7 @@ public class TestController {
     @RequestMapping("/001")
     public String test01() {
         String s = testService.test01();
+        System.out.println(s);
         return s;
     }
 
